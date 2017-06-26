@@ -1,5 +1,5 @@
 <template>
-  <div id="aspp">
+  <div id="mainapp">
     <link rel="stylesheet" href="/static/style.css">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
@@ -10,38 +10,17 @@
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
-          </div>
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://www.rookie-manager.com/personal-finance/why-take-on-the-52-week-challenge/">blog</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://twitter.com/search?q=%2352WeekChallenge&src=typd">Twitter</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://github.com/bikundo/-52WeekChallenge">Code</a>
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="/static/images/android-logo.png">
           </span>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
-          </ul>
         </div>
       </div>
 
@@ -50,13 +29,10 @@
         <div class="android-be-together-section mdl-typography--text-center">
           <div class="logo-font android-slogan"></div>
           <div class="logo-font android-sub-slogan"></div>
-          <div class="logo-font android-create-character">
-          </div>
+          <div class="logo-font android-create-character"></div>
         </div>
-
-
         <div class="android-customized-section">
-          <hello></hello>
+          <Calc></Calc>
         </div>
 
 
@@ -71,13 +47,11 @@
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+            <p class="mdl-typography--font-light">© 2017</p>
+            <p class="mdl-typography--font-light">Some features may not be available in all browsers</p>
           </div>
-
           <div class="mdl-mega-footer--bottom-section">
             <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
           </div>
 
         </footer>
@@ -87,23 +61,23 @@
 </template>
 
 <script>
-import Hello from './components/Hello';
+  import Calc from './components/Calc';
 
-export default {
-  name: 'app',
-  components: {
-    Hello,
-  },
-};
+  export default {
+    name: 'app',
+    components: {
+      Calc,
+    },
+  };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>

@@ -2,19 +2,22 @@
 <template>
   <div class="hello">
     <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">
-      <br>
-      {{ msg }}
-      <br>
-      <!-- Simple Textfield -->
-      <div>
-        <div class="group">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet">
+          <h3 class="text-center">
+            <small>starting amount</small>
+          </h3>
           <input type="number" id="starting" required="required" v-model="starting"/>
         </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet">
+          <h3 class="pull-right">
+            <small>total saved</small>
+            <br>
+            $ {{totalSaved}}
+          </h3>
+        </div>
       </div>
-      <hr>
-      <h3 class="pull-right">
-      total saved : KES {{totalSaved}}
-    </h3></div>
+      </div>
     <div>
       <div class="mdl-grid" >
         <div class="mdl-cell mdl-cell--3-col mdl-cell--6-col-tablet holder mdl-shadow--1dp" v-for="week in computedTotals">
@@ -31,14 +34,14 @@
               <p>
                 deposit
                 <br>
-                <b>KES {{week.deposit.toLocaleString()}}</b>
+                <b>$ {{week.deposit.toLocaleString()}}</b>
               </p>
             </div>
             <div class="mdl-cell mdl-cell--4-col ">
             <p>
                total
               <br>
-             <b>KES {{week.total.toLocaleString()}}</b>
+             <b>$ {{week.total.toLocaleString()}}</b>
             </p>
             </div>
           </div>
@@ -50,7 +53,7 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'calc',
   data() {
     return {
       data: {},
@@ -118,7 +121,7 @@ input, textarea {
   font-size: 28px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 50%;
+  width: 100%;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #c6c6c6;
