@@ -6,7 +6,7 @@
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="/static/images/android-logo.png">
+        
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -50,10 +50,6 @@
             <p class="mdl-typography--font-light">© 2017</p>
             <p class="mdl-typography--font-light">Some features may not be available in all browsers</p>
           </div>
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-          </div>
-
         </footer>
       </div>
     </div>
