@@ -1,6 +1,6 @@
 # week
 
-> 52 week challenge calculator   --- https://dist-ticflethdw.now.sh/
+> 52 week challenge calculator   --- https://52weekchallenge.site
 
 ## Build Setup
 

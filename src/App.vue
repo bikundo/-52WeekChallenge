@@ -13,13 +13,12 @@
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://www.rookie-manager.com/personal-finance/why-take-on-the-52-week-challenge/">blog</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://twitter.com/search?q=%2352WeekChallenge&src=typd">Twitter</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://github.com/bikundo/-52WeekChallenge">Code</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://github.com/bikundo/-52WeekChallenge">Github</a>
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="/static/images/android-logo.png">
+            <!-- <img class="android-logo-image" src="/static/images/android-logo.png"> -->
           </span>
         </div>
       </div>
@@ -47,7 +46,7 @@
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">© 2017</p>
+            <p class="mdl-typography--font-light">© 2019</p>
             <p class="mdl-typography--font-light">Some features may not be available in all browsers</p>
           </div>
         </footer>
