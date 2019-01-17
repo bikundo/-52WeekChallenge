@@ -13,7 +13,7 @@
           <h3 class="pull-right">
             <small>total saved</small>
             <br>
-            $ {{totalSaved}}
+            KES {{totalSaved}}
           </h3>
         </div>
       </div>
@@ -34,14 +34,14 @@
               <p>
                 deposit
                 <br>
-                <b>$ {{week.deposit.toLocaleString()}}</b>
+                <b><small>KES</small> {{week.deposit.toLocaleString()}}</b>
               </p>
             </div>
             <div class="mdl-cell mdl-cell--4-col ">
             <p>
                total
               <br>
-             <b>$ {{week.total.toLocaleString()}}</b>
+             <b><small>KES</small> {{week.total.toLocaleString()}}</b>
             </p>
             </div>
           </div>
